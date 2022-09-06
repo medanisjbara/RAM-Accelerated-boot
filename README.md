@@ -45,6 +45,7 @@ cp -a /disk_root/* /new_root
 umount /disk_root
 ```
 Here I am using 8G, but you can use as much as you like as long as it is more than the size of your filesystem (and less than you RAM, unless you are using swap)
+A copy of the result `init` file is available [here](/init)
 
 * Update your initramfs
   * This should be as simple as running `mkinitcpio -g /boot/initramfs-5.18.19_1.img` or whatever initramfs image you have in your `/boot`. 
